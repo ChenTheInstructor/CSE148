@@ -1,39 +1,41 @@
 package p1;
 
 public class Student {
-	String name;
-	double gpa;
-	int age;
-	
-	String getName() {
+	private String name = "John";
+	private double gpa = 0.0;
+	private int age = 18;
+
+	private static String collegeName;
+
+	public String getName() {
 		return name;
 	}
-	
-	double getGpa() {
+
+	public double getGpa() {
 		return gpa;
 	}
-	
-	int getAge() {
+
+	public int getAge() {
 		return age;
 	}
-	
-	void setName(String newName) {
+
+	public void setName(String newName) {
 		name = newName;
 	}
-	
-	void setGpa(double newGpa) {
+
+	public void setGpa(double newGpa) {
 		gpa = newGpa;
 	}
-	
-	void setAge(int newAge) {
+
+	public void setAge(int newAge) {
 		age = newAge;
 	}
-	
-	void doHomework() {
+
+	public void doHomework() {
 		System.out.println("Do homework...");
 	}
-	
-	String submitHomework(String hw) {
+
+	public String submitHomework(String hw) {
 		return hw;
 	}
 }

@@ -1,4 +1,6 @@
-package p1;
+package p2;
+
+import p1.Student;
 
 public class Main {
 
@@ -8,11 +10,6 @@ public class Main {
 		s1.setName("Dan");
 		s1.setGpa(4.0);
 		s1.setAge(26);
-//		s1.name = "Dan";
-//		s1.gpa = 3.5;
-//		s1.age = 26;
-		
-//		System.out.println(s1.name);
 		
 		String s1Name = s1.getName();
 		double s1Gpa = s1.getGpa();
