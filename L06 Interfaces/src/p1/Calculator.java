@@ -17,7 +17,7 @@ public class Calculator implements Computable {
 		System.out.println("Good-bye!");
 	}
 	
-	public double doThis(Computable c) {
-		
-	}
+//	public double doThis(Computable c) {
+//		
+//	}
 }
