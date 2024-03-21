@@ -1,0 +1,6 @@
+Alan 1 1.5
+Bill 2 3.5
+Cathy 3 4.0
+Dave 4 2.6
+Ellen 5 3.6
+Gary 6 3.8

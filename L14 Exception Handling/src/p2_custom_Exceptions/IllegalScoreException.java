@@ -1,6 +1,7 @@
 package p2_custom_Exceptions;
 
-public class IllegalScoreException extends RuntimeException {
+public class IllegalScoreException extends Exception {
+	
 	public IllegalScoreException() {
 		super();
 	}

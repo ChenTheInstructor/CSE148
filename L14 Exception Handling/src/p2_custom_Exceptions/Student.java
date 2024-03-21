@@ -4,11 +4,16 @@ public class Student {
 	private String name;
 	private double score;
 
-	public Student(String name, double score) throws IllegalScoreException {
+	public Student(String name, double score) {
 		super();
 		this.name = name;
 		if (score < 0.0 || score > 100.0) {
-			throw new IllegalScoreException("The score is illegal.");
+			try {
+				throw new IllegalScoreException("The score is illegal.");
+			} catch (Exception ex) {
+				ex.printStackTrace();
+				System.out.println(ex.getMessage());
+			}
 		} else {
 			this.score = score;
 		}
