@@ -1,15 +1,17 @@
 package p1_predicate;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.function.Predicate;
 
-public class StudentBag {
+public class StudentBag implements Serializable{
 	private Student[] arr;
 	private int nElems;
 	
 	public StudentBag(int maxSize) {
 		arr = new Student[maxSize];
 	}
+	
 	
 	public Student[] remove(Predicate<Student> predicate) {
 		Student[] foundArr = new Student[nElems];

@@ -1,14 +1,19 @@
 package p1_predicate;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Serializable {
 	private String name;
 	private double gpa;
+	private String id;
+
+	private static int idCount = 0;
 
 	public Student(Student student) {
 		this.name = student.name;
 		this.gpa = student.gpa;
+		id = String.valueOf(idCount++);
 	}
 
 	@Override
@@ -32,6 +37,7 @@ public class Student {
 		super();
 		this.name = name;
 		this.gpa = gpa;
+		id = String.valueOf(idCount++);
 	}
 
 	public String getName() {
@@ -52,7 +58,15 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", gpa=" + gpa + "]";
+		return "Student [name=" + name + ", gpa=" + gpa + ", id=" + id + "]";
+	}
+	
+	public static int getIdCount() {
+		return idCount;
+	}
+	
+	public static void setIdCount(int idCount) {
+		Student.idCount = idCount;
 	}
 
 }
