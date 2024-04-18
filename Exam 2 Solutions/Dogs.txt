@@ -1,0 +1,3 @@
+DogA 55.0 Black
+DogB 15.0 Brown
+DogC 25.0 White
